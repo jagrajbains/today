@@ -1,0 +1,21 @@
+{
+  "name": "today",
+  "version": "1.0.0",
+  "description": "A task manager app to record daily tasks",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Jagraj Bains",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.5.6",
+    "mongoose": "^5.9.10",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
