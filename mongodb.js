@@ -11,6 +11,7 @@ client.connect((err, client) => {
   }
   console.log('Connected successfully')
   const db = client.db(dbName);
+
   // db.collection('users').insertOne({
   //   'name': 'Jagraj Bains',
   //   'age': 26
@@ -18,7 +19,7 @@ client.connect((err, client) => {
   //   if(error) {
   //     return console.log('Unable to insert document', error);
   //   }
-  //   console.log(result.ops)
+  //   console.log(`User created with id: ${result.insertedId}`)
   // })
 
   // db.collection('users')
@@ -29,16 +30,16 @@ client.connect((err, client) => {
   //   if(error) {
   //     console.log("Unable to insert documents", error)
   //   }
-  //   console.log(result.ops)
+  //   console.log(result)
   // })
 
-  db.collection('tasks').insertMany([
-    {'description': 'Create an Email list', 'completed': false},
-    {'description': 'Meeting with team members', 'completed': false},
-    {'description': 'Learn Node.js', 'completed': true}
-  ], (error, result) => {
-    if(error) return console.log('Unable to insert document', error)
-    console.log(result.insertedIds)
-  })
+  // db.collection('tasks').insertMany([
+  //   {'description': 'Create an Email list', 'completed': false},
+  //   {'description': 'Meeting with team members', 'completed': false},
+  //   {'description': 'Learn Node.js', 'completed': true}
+  // ], (error, result) => {
+  //   if(error) return console.log('Unable to insert document', error)
+  //   console.log(result.insertedIds)
+  // })
 })
 
