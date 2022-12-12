@@ -10,7 +10,7 @@
   "author": "Jagraj Bains",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mongodb": "4.1.4",
     "mongoose": "6.0.12",
     "validator": "^13.7.0"
